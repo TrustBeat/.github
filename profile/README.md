@@ -17,7 +17,7 @@ Anchor hashes, logs, and AI decisions into qualified timestamps — and prove th
 TrustBeat is a high-performance **Trust Layer** over eIDAS-qualified timestamping. Client hashes are batched into a Merkle tree and anchored to a **qualified timestamp** roughly every 10 minutes, so thousands of proofs share the cost of a single qualified token — while each hash still gets its own independently verifiable inclusion proof.
 
 - **No file storage** — only hashes are accepted; your content never leaves your machine.
-- **Qualified provider** — backed by a live eIDAS QTSP (SK ID Solutions), with an independent qualified fallback.
+- **Redundant qualified providers** — backed by multiple independent eIDAS QTSPs (SK ID Solutions, EuroCert) with automatic failover, so timestamping never depends on a single provider staying up.
 - **Offline verification** — every proof verifies locally against the Merkle root and the qualified token, with no call back to us.
 
 ## Products
